@@ -58,7 +58,15 @@
 
 # Introduction
   ## Purpose
+   
+   El presente documento tiene como proposito definir todos los requerimientos del sistema para la implementación de una aplicación para móviles que permitirá ordenar a domicilio de las diferentes sucursales de la cadena de restaurantes SubWay.
+    
+    En el documento se analizaran los requerimientos del cliente, se describirá el plan de acción para desarrollar la aplicación móvil, se presentara la interfaz de la app y una interfaz para el sistema de la empresa para recibir los pedidos.      
   ## Scope  
+  
+  El producto sera una aplicación móvil que funcionara en smartphones que permitirá ordenar diferentes tipos de sándwiches, ensaladas, desayunos, bebidas y extras, tambien se podra encontrar informacion de las diferentes sucursales de la ciudad donde estes ubicado, puntos de entrega, informacion de contacto y promociones.
+  La app funcionara en los sistemas operativos ios y android, se descargara de las tiendas virtuales de cada sistema operativo y sera de manera gratuita para los usuarios.
+    
   ## Definitions, acronymus, and abbreviations
   ## References
   ## Overview
