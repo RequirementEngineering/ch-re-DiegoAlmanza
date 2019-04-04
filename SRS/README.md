@@ -66,19 +66,37 @@
   
  La finalidad del producto es facilitar el servicio a domiciliio de la empresa, el producto sera una aplicación móvil que funcionara en smartphones en la cual se podara ordenar lo siguiente:
  
-•sándwiches 
+•sándwiches
+
+
 •ensaladas 
+
+
 •desayunos 
+
+
 •bebidas  
+
+
 •extras 
 
 tambien se podra encontrar la siguiente informacion: 
 
 •diferentes sucursales de la ciudad donde estes ubicado
+
+
 •puntos de entrega 
+
+
 •Sub del día
+
+
 •informacion de contacto  
+
+
 •promociones nacionales
+
+
 •Servicio de facturacion
 
   La app funcionara en los sistemas operativos ios y android, se descargara de las tiendas virtuales de cada sistema operativo y sera de manera gratuita para los usuarios.
@@ -86,8 +104,9 @@ tambien se podra encontrar la siguiente informacion:
   
     
   ## Definitions, acronymus, and abbreviations
-  
-  * 
+    
+  * Sub: sándwiches 
+  * Sub del día: Cada dia de la seman tiene un sub en oferta
   
   
   ## References
