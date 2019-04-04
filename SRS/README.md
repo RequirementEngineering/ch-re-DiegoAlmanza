@@ -64,8 +64,23 @@
    En el documento se analizaran los requerimientos del cliente, se describirá el plan de acción para desarrollar la aplicación móvil, se presentara la interfaz de la app y una interfaz para el sistema de la empresa para recibir los pedidos.      
   ## Scope  
   
- La finalidad del producto es facilitar el servicio a domiciliio de la empresa, el producto sera una aplicación móvil que funcionara en smartphones que permitirá ordenar diferentes tipos de sándwiches, ensaladas, desayunos, bebidas y extras, tambien se podra encontrar informacion de las diferentes sucursales de la ciudad donde estes ubicado, puntos de entrega, informacion de contacto y promociones.
-  
+ La finalidad del producto es facilitar el servicio a domiciliio de la empresa, el producto sera una aplicación móvil que funcionara en smartphones en la cual se podara ordenar lo siguiente:
+ 
+•sándwiches 
+•ensaladas 
+•desayunos 
+•bebidas  
+•extras 
+
+tambien se podra encontrar la siguiente informacion: 
+
+•diferentes sucursales de la ciudad donde estes ubicado
+•puntos de entrega 
+•Sub del día
+•informacion de contacto  
+•promociones nacionales
+•Servicio de facturacion
+
   La app funcionara en los sistemas operativos ios y android, se descargara de las tiendas virtuales de cada sistema operativo y sera de manera gratuita para los usuarios.
   
   
