@@ -7,13 +7,13 @@
    En el documento se analizaran los requerimientos del cliente, se describirá el plan de acción para desarrollar la aplicación móvil, se presentara la interfaz de la app y una interfaz para el sistema de la empresa para recibir los pedidos.      
   
   ## Alcance  
-  Se desarrollaran dos sistemas: 
+  El producto final constara de dos sistemas: 
   
-  * SubWay APP será una app para moviles que sera desarrollada en Java, en esta app se podra ordenar a domicilio cualquier cosa del menú de las diferentes sucursales de la cadena de comida rápida SubWay.
+ * SubWay APP será una App para móviles que será desarrollada en Java, en esta App se podrá ordenar a domicilio cualquier cosa del menú de las diferentes sucursales de la cadena de comida rápida SubWay.
   
-  * Un sistema para empleados de la empresa para recibir todos los pedidos especificados, direccion para entregar el pedido e informacion de contacto con el cliente en caso de dudas. Este sistema se conectara a una base de datos para tener infromacion de cuantos productos vendio la sucursal.  
+  * Un sistema para empleados de la empresa para recibir todos los pedidos especificados, dirección para entregar el pedido e información de contacto con el cliente en caso de dudas. Este sistema se conectara a una base de datos para tener información de cuantos productos vendió la sucursal.
  
-     
+      
   ## Definiciones, acrónimos y abreviaturas.
     
   * Sub: sándwiches 
@@ -64,64 +64,33 @@ tambien se podra encontrar la siguiente informacion:
   La app funcionara en los sistemas operativos ios y android, se descargara de las tiendas virtuales de cada sistema operativo y sera de manera gratuita para los usuarios.
   
   ### Caracteristicas del usuario
-   En total exstirán cinco tipos de usuarios que van a interactuar con los sistemas:
+ En total existirán cinco tipos de usuarios que van a interactuar con los sistemas:
    1. **Cliente:**
-      El cliente usará la app desde su celular para ordenar de la sucursal de su preferencia, el usuario podra ordenar cualquier cosa que este disponible en el menú de SubWay a su domicilio.
+      El cliente usará la App desde su celular para ordenar de la sucursal de su preferencia, el usuario podrá ordenar cualquier cosa que esté disponible en el menú de SubWay a su domicilio.
    2. **Cajero:**
-      El cajero recibira una notificación cuando llegue un pedido e informara al cocinero de la orden. Cuando el cocinero termine de preparar la orden, el cajero se encargara de generar el tiket del pedido y entregarselo al repartidor.  
-    
+      El cajero recibirá una notificación cuando llegue un pedido e informara al cocinero de la orden. Cuando el cocinero termine de preparar la orden, el cajero se encargara de generar el ticket del pedido y entregárselo al repartidor.  
    3. **Cocinero:**
-      El cocinero se encargara de revisar la orden y prepararla, una vez termine de preparar la orden se la entragara al cajero.
-      
-   4.**Repartidor:**
-      El repartidor entregará la orden al cliente y tendra la informacion de contacto en la app. 
+      El cocinero se encargara de revisar la orden y prepararla, una vez termine de preparar la orden se la entregará al cajero.
+   4. **Repartidor:**
+        El repartidor entregará la orden al cliente y tendrá la información de contacto (Dirección, Nombre del cliente y teléfono) en la App. 
+   5. **Dueño:**
+      El dueño tendrá acceso a la base de datos que genere el sistema para estar informado del total de ventas en el día y un inventario.
+
+  ### Restricciones
+   La única opción de paga que tiene el cliente es mediante una tarjeta de débito o crédito, desde la App no se podrá ordenar para pagar en efectivo
+   
+   ### Suposiciones y dependencias
+   Para el funcionamiento completo de SubWay App es necesario tener conexion a internet y se recomiendan los siguientes sistemas operativos:
+   * En android: sistema operativo android 4.0 o superior. 
+   * En Iphone: Ios 10 o superior.
+   
+   ###Requerimientos específicos
+   En esta sección se encontraran a detalle los requerimientos específicos del sistema a desarrollar.
+   
+   ###Interfaz
+   
+   
+   
+   
+   
   
-  
-   ### System Interfaces
-   ### User Interfaces
-   ### Hardware Interfaces
-   ### Software Interfaces
-   ### Communications Interfaces
-   ### Memory
-   ### Operations
-   ### Site adaptations requirements
-  ## Product Functions
-  ## User Characteristics
-  ## Constraints
-   ### Regulatory policies
-   ### Hardware limitations
-   ### Interfaces to other applications
-   ### Parallel operation
-   ### Audit functions
-   ### Control functions
-   ### Higher-order language requirements
-   ### Signal handshake protocols
-   ### Reliability requirements
-   ### Criticality of the application
-   ### Safety and security considerations
-  ## Assumptions and dependencies
-# Specific requirements
-  ## External Interfaces
-  ## Functions
-  ## Performance requirements
-  ## Logical database requirements
-  ## Design constraints
-   ### Standar compliance
-  ## Software system attributes
-   ### Realibility
-   ### Availability
-   ### Segurity
-   ### Maintiability
-   ### Portability
- ## Organizing the specific requirements
-   ### System mode
-   ### User class
-   ### Objects
-   ### Feature
-   ### Stimulus
-   ### Response
-   ### Functional hyerarchy
- ## Additional comments
-# Supporting Information
- ## Table of contents and index
- ## Appendixes
