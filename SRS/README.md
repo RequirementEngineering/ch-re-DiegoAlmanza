@@ -9,7 +9,7 @@
   ## Alcance  
   El producto final constara de dos sistemas: 
   
- * SubWay APP será una App para móviles que será desarrollada en Java, en esta App se podrá ordenar a domicilio cualquier cosa del menú de las diferentes sucursales de la cadena de comida rápida SubWay.
+ * SubWay APP será una App para móviles que será desarrollada en Java, en esta App se podrá ordenar a domicilio cualquier cosa del menú de las diferentes sucursales de la cadena de comida rápida SubWay. 
   
   * Un sistema para empleados de la empresa para recibir todos los pedidos especificados, dirección para entregar el pedido e información de contacto con el cliente en caso de dudas. Este sistema se conectara a una base de datos para tener información de cuantos productos vendió la sucursal.
  
@@ -77,17 +77,31 @@ tambien se podra encontrar la siguiente informacion:
       El dueño tendrá acceso a la base de datos que genere el sistema para estar informado del total de ventas en el día y un inventario.
 
   ### Restricciones
-   La única opción de paga que tiene el cliente es mediante una tarjeta de débito o crédito, desde la App no se podrá ordenar para pagar en efectivo
+   La única opción de paga que tiene el cliente es mediante una tarjeta de débito o crédito, desde la App no se podrá ordenar para pagar en efectivo.
+   El usuario tendrá que crear una cuenta para poder ordenar desde la App, al crear la cuenta se le pedirá nombre y número de teléfono, esta información se mostrara en el sistema de la empresa para tener contacto con el cliente
    
    ### Suposiciones y dependencias
    Para el funcionamiento completo de SubWay App es necesario tener conexion a internet y se recomiendan los siguientes sistemas operativos:
    * En android: sistema operativo android 4.0 o superior. 
    * En Iphone: Ios 10 o superior.
    
-   ###Requerimientos específicos
+   ### Requerimientos específicos
    En esta sección se encontraran a detalle los requerimientos específicos del sistema a desarrollar.
    
-   ###Interfaz
+   ### Interfaz
+   La interfaz de la App para los clientes deberá ser intuitiva de manera que, sin un manual el usuario pueda ininteractuar de manera sencilla con la aplicación. La interfaz a demas deberá contar con los colores caracteristicos de SubWay los cuales son verde y amarillio. 
+   * Mensaje de Bienvenida:
+   Al abrir la App se mostrara un mensaje de bienvenida y se mostrara en pantalla el logo de subway.
+   
+   * Ordenar: 
+   Esta sera la opcion principal y sera la mas grande, si se selecciona esta opcion se preguntara que desea ordenar y se le mostrara el menú. En un costado de cada opcion del menú el usuario podra escoger la cantidad deseada de cada producto.
+   
+   * Escoger los ingredientes
+   Una vez seleccionado los productos y las cantidades empezara el proceso de preparacion:
+    1. Tipo de Sub: Se mostraran todos los tipos de sandiwch 
+    2. Tipo de pan: Se mostraran en lista los diferentes tipos de pan
+    3. Escoger vegetales: Se mostrara una imagen de cada vegetal y se pedira al usuario que seleccione que vegetales quiere en su Sub.
+   
    
    
    
