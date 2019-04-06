@@ -89,18 +89,60 @@ tambien se podra encontrar la siguiente informacion:
    En esta sección se encontraran a detalle los requerimientos específicos del sistema a desarrollar.
    
    ### Interfaz
+   
+   ### Interfaz Cliente
    La interfaz de la App para los clientes deberá ser intuitiva de manera que, sin un manual el usuario pueda ininteractuar de manera sencilla con la aplicación. La interfaz a demas deberá contar con los colores caracteristicos de SubWay los cuales son verde y amarillio. 
-   * Mensaje de Bienvenida:
+   * **Mensaje de Bienvenida:**
    Al abrir la App se mostrara un mensaje de bienvenida y se mostrara en pantalla el logo de subway.
    
-   * Ordenar: 
-   Esta sera la opcion principal y sera la mas grande, si se selecciona esta opcion se preguntara que desea ordenar y se le mostrara el menú. En un costado de cada opcion del menú el usuario podra escoger la cantidad deseada de cada producto.
+   * En la parte superior central estará el logo de SubWay
+   
+   * En la parte superior izquierda estará la opción para que el usuario ingrese a su cuenta o cree su cuenta
+   
+   * **Informacion:**
+   En esta opcion se encontrara:
+   
+  1. diferentes sucursales de la ciudad donde estes ubicado.
+
+  2. Sub del día
+
+
+  3. Información de contacto  
+
+
+  4. Promociones nacionales
+
+   * **Ordenar:** 
+  Esta será la opción principal y será la más grande, si se selecciona esta opción se preguntara que desea ordenar y se le mostrara el menú. En un costado de cada opción del menú el usuario podrá escoger la cantidad deseada de cada producto.
    
    * Escoger los ingredientes
-   Una vez seleccionado los productos y las cantidades empezara el proceso de preparacion:
-    1. Tipo de Sub: Se mostraran todos los tipos de sandiwch 
-    2. Tipo de pan: Se mostraran en lista los diferentes tipos de pan
-    3. Escoger vegetales: Se mostrara una imagen de cada vegetal y se pedira al usuario que seleccione que vegetales quiere en su Sub.
+   Una vez seleccionado los productos y las cantidades empezara el proceso de preparación:
+   
+   1. Tipo de Sub: Se mostraran todos los tipos de sándwich 
+   
+   2. Tipo de pan: Se mostraran en lista los diferentes tipos de pan
+   
+   3. Escoger vegetales: Se mostrara una imagen de cada vegetal y se pedirá al usuario que seleccione que vegetales quiere en su Sub.
+   
+   4. Escoger líquidos: Se mostrara una imagen de cada líquido disponible y se pedirá al usuario que seleccione que líquidos quiere en su Sub.
+   
+   5. Escoger extras: Se preguntara al usuario si desea agregar extras a su Sub, si el usuario acepta agregar extras se mostrara una imagen de cada ingrediente extra disponible y se pedirá al usuario que seleccione los extras que quiere en su sub
+
+  * Paga de pedido:
+  Se mostrara el precio de cada producto y un precio total del pedido, en la parte inferior estará la ventana para introducir los datos de la tarjeta de crédito o débito para proceder con la compra.
+  
+  
+  ### Interfaz Empresa
+  
+  * **Empleados:**
+  Se mostrara en forma de lista cada pedido que se genere, al seleccionar un pedido se mostrara la orden a detalle y la información del cliente, una vez terminen la orden podrán eliminar la orden de la lista.
+  
+  * **Repartidor:**
+ Cada repartidor tendrá su cuenta para acceder a la App y poder ver las direcciones de los pedidos que debe entregar
+ 
+ * **Dueño: **
+El dueño tendrá acceso a la base de datos donde se mostrara el total de productos vendidos.   
+  
    
    
    
