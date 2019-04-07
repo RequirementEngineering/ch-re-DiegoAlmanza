@@ -15,51 +15,52 @@
  
       
   ## Definiciones, acrónimos y abreviaturas.
-    
+  * SubWay:  cadena de restaurantes de comida rápida especializada en la elaboración de sándwich submarino, bocadillos y ensaladas.   
   * Sub: sándwiches 
   * Sub del día: Cada dia de la seman tiene un sub en oferta
-  
+  * App: Aplicación
   
   ## Referencias
-  ## Overview
-# Overall Description
+  * https://www.subway.com/es-MX/MenuNutrition/Menu/All
+
+# Descripción general
 
   ## Perspectiva del producto
   La finalidad del producto es facilitar el servicio a domiciliio de la empresa, el producto sera una aplicación móvil que funcionara en smartphones en la cual se podara ordenar lo siguiente:
  
-•sándwiches
+   •sándwiches
 
 
-•ensaladas 
+   •ensaladas 
 
 
-•desayunos 
+   •desayunos 
 
 
-•bebidas  
+  •bebidas  
 
 
-•extras 
+  •extras 
 
 
 tambien se podra encontrar la siguiente informacion: 
 
-•diferentes sucursales de la ciudad donde estes ubicado
+  •diferentes sucursales de la ciudad donde estes ubicado
 
 
-•puntos de entrega 
+  •puntos de entrega 
 
 
-•Sub del día
+  •Sub del día
 
 
-•información de contacto  
+  •información de contacto  
 
 
-•promociones nacionales
+  •promociones nacionales
 
 
-•Servicio de facturación
+  •Servicio de facturación
 
   La app funcionara en los sistemas operativos ios y android, se descargara de las tiendas virtuales de cada sistema operativo y sera de manera gratuita para los usuarios.
   
@@ -106,9 +107,7 @@ tambien se podra encontrar la siguiente informacion:
 
   2. Sub del día
 
-
   3. Información de contacto  
-
 
   4. Promociones nacionales
 
@@ -138,10 +137,42 @@ tambien se podra encontrar la siguiente informacion:
   Se mostrara en forma de lista cada pedido que se genere, al seleccionar un pedido se mostrara la orden a detalle y la información del cliente, una vez terminen la orden podrán eliminar la orden de la lista.
   
   * **Repartidor:**
- Cada repartidor tendrá su cuenta para acceder a la App y poder ver las direcciones de los pedidos que debe entregar
+ Cada repartidor tendrá su cuenta para acceder a la App y poder una lista de órdenes que debe entregar, información del cliente y los detalles del pedido, cuando el repartidor entregue la orden podrá eliminar la orden de la lista entregas.  
  
- * **Dueño: **
-El dueño tendrá acceso a la base de datos donde se mostrara el total de productos vendidos.   
+ * **Dueño:**
+El dueño tendrá acceso a la base de datos donde se mostrara a detalle el total de órdenes que se vendieron cada día y los detalles de cada orden.
+
+
+### Requerimientos funcionales
+* Cliente:
+    1. Inicio de sesión.
+
+    2. Ordenar del menú de SubWay a domicilio.
+
+    4. Consultar la información general de SubWay (Sucursales, Contacto, Ofertas, Facturación).
+    
+    
+ * Empresa:
+    1. Inicio de sesión.
+    
+    2. Sistema de empleados para recibir en lista las ordenes de los clientes y la información de contacto del cliente.
+    
+    3. Base de datos en la que se mostraran todas las órdenes vendidas, los detalles de cada orden y el total de cada producto vendido.
+    
+    4. Cuentas especiales para el uso de los repartidores, en estas cuentas el repartidor encontrara lo necesario para realizar las entregas de los pedidos 
+    
+    
+ ### Requirimiento No funcionales
+  * El requerimiento más importante que el sistema va a tener es la estabilidad, ya que si el producto final no es estable tiene el riesgo de cambiar o dañar los pedidos de los clientes y esto afectaría a la empresa y al cliente.
+   
+   * La documentación es necesaria para que el usuario sea capaz de resolver sus dudas, las dudas de los usuarios surgirán mientras estén usando el nuevo sistema. La documentación debe ser completa pero no tan extensa para que el usuario le sea facil entenderla y le sea de utilidad.
+   
+   * Seguridad para todos los usuarios, al momento de la especificación de usuario y contraseña, se necesita que el sistema cuenta con seguridad para resguardar todos esos datos.
+   
+   * Mantenimiento cada cierto tiempo al software.
+
+  
+
   
    
    
