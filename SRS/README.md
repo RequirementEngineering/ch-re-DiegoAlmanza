@@ -163,13 +163,13 @@ El dueño tendrá acceso a la base de datos donde se mostrara a detalle el total
     
     
  ### Requirimiento No funcionales
-  * El requerimiento más importante que el sistema va a tener es la estabilidad, ya que si el producto final no es estable tiene el riesgo de cambiar o dañar los pedidos de los clientes y esto afectaría a la empresa y al cliente.
+  1. El requerimiento más importante que el sistema va a tener es la estabilidad, ya que si el producto final no es estable tiene el riesgo de cambiar o dañar los pedidos de los clientes y esto afectaría a la empresa y al cliente.
    
-   * La documentación es necesaria para que el usuario sea capaz de resolver sus dudas, las dudas de los usuarios surgirán mientras estén usando el nuevo sistema. La documentación debe ser completa pero no tan extensa para que el usuario le sea facil entenderla y le sea de utilidad.
+   2. La documentación es necesaria para que el usuario sea capaz de resolver sus dudas, las dudas de los usuarios surgirán mientras estén usando el nuevo sistema. La documentación debe ser completa pero no tan extensa para que el usuario le sea facil entenderla y le sea de utilidad.
    
-   * Seguridad para todos los usuarios, al momento de la especificación de usuario y contraseña, se necesita que el sistema cuenta con seguridad para resguardar todos esos datos.
+   3. Seguridad para todos los usuarios, al momento de la especificación de usuario y contraseña, se necesita que el sistema cuenta con seguridad para resguardar todos esos datos.
    
-   * Mantenimiento cada cierto tiempo al software.
+   4. Mantenimiento cada cierto tiempo al software.
 
   
 
