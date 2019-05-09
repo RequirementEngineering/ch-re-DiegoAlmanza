@@ -25,6 +25,24 @@
 
 # Descripción general
 
+  ## Elicitación
+   * En la App de celulares la función principal que deberá de tener será ordenar a domicilio de las diferentes sucursales de la ciudad  y que los clientes puedan crear una cuenta para saber su nombre y dirección.
+  
+  * En la App se encontrara el menú de SubWay incluyendo la información de los sub del día.
+  
+  * También se deberá encontrar información en la App de las sucursales que estén en la ciudad y la información de contacto de cada sucursal.
+  
+  * El sistema de la empresa debera de contar con lo siguiente:
+     1. registro de entrada y salida de cada empleado.
+     2. recibir las ordenes que hagan los clientes desde la App movil y dirección para entregar cada orden.
+     3. guardar todas las ordenes echas por los clientes.
+     
+Los puntos anteriores se obtuvieron en una entrevista realizada a un gerente de SubWay, después de escuchar los puntos del gerente se acordó que la App para móviles tendrá la función principal de ordenar a domicilio además de contar con información básica como: menú, sucursales, información de contacto, etc.
+ En el sistema que se desarrollara para la empresa se llegó al acuerdo de que cada empleado, administrativo y jefe tendrán su propia cuenta en la que se registrara las horas de trabajo. Este sistema recibira las ordenes detalladas de cada cliente y estará conectado a una base de datos en la que registrara las órdenes vendidas y las horas trabajadas de los empleados, a esta base de datos solo tendrá acceso el jefe de la sucursal y los administrativos.
+
+     
+     
+
   ## Perspectiva del producto
   La finalidad del producto es facilitar el servicio a domiciliio de la empresa, el producto sera una aplicación móvil que funcionara en smartphones en la cual se podara ordenar lo siguiente:
  
@@ -76,10 +94,8 @@ tambien se podra encontrar la siguiente informacion:
         El repartidor entregará la orden al cliente y tendrá la información de contacto (Dirección, Nombre del cliente y teléfono) en la App. 
    5. **Dueño:**
       El dueño tendrá acceso a la base de datos que genere el sistema para estar informado del total de ventas en el día y un inventario.
-
-  ### Restricciones
-   La única opción de paga que tiene el cliente es mediante una tarjeta de débito o crédito, desde la App no se podrá ordenar para pagar en efectivo.
-   El usuario tendrá que crear una cuenta para poder ordenar desde la App, al crear la cuenta se le pedirá nombre y número de teléfono, esta información se mostrara en el sistema de la empresa para tener contacto con el cliente
+   6. **Administrativo:**
+      Al igual que el dueño tendrán acceso a la base de datos y la información de las horas trabajadas de cada empleado.
    
    ### Suposiciones y dependencias
    Para el funcionamiento completo de SubWay App es necesario tener conexion a internet y se recomiendan los siguientes sistemas operativos:
@@ -128,7 +144,7 @@ tambien se podra encontrar la siguiente informacion:
    5. Escoger extras: Se preguntara al usuario si desea agregar extras a su Sub, si el usuario acepta agregar extras se mostrara una imagen de cada ingrediente extra disponible y se pedirá al usuario que seleccione los extras que quiere en su sub
 
   * Paga de pedido:
-  Se mostrara el precio de cada producto y un precio total del pedido, en la parte inferior estará la ventana para introducir los datos de la tarjeta de crédito o débito para proceder con la compra.
+  Se mostrara el precio de cada producto y un precio total del pedido, en la parte inferior se encontraran dos opciones de pago efectivo y tarjeta de crédito, si se escoge con tarjeta de crédito aparecerá la ventana para introducir los datos de la tarjeta de crédito o débito para proceder con la compra.
   
   
   ### Interfaz Empresa
@@ -141,6 +157,9 @@ tambien se podra encontrar la siguiente informacion:
  
  * **Dueño:**
 El dueño tendrá acceso a la base de datos donde se mostrara a detalle el total de órdenes que se vendieron cada día y los detalles de cada orden.
+
+* **Administrador:**
+El Administrador se le mostrara una base de datos con las horas de trabajo de cada empleado y una base de datos con las órdenes vendidas cada día y los detalles de cada una.
 
 
 ### Requerimientos funcionales
@@ -159,7 +178,9 @@ El dueño tendrá acceso a la base de datos donde se mostrara a detalle el total
     
     3. Base de datos en la que se mostraran todas las órdenes vendidas, los detalles de cada orden y el total de cada producto vendido.
     
-    4. Cuentas especiales para el uso de los repartidores, en estas cuentas el repartidor encontrara lo necesario para realizar las entregas de los pedidos 
+    4. Base de datos en la que se mostraran las horas trabajadas de cada empleado. 
+    
+    5. Cuentas especiales para el uso de los repartidores, en estas cuentas el repartidor encontrara lo necesario para realizar las entregas de los pedidos 
     
     
  ### Requirimiento No funcionales
