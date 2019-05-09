@@ -26,6 +26,16 @@
 # Descripción general
 
   ## Elicitación
+  
+   * El proceso de preparacion de los Sub es:
+     1. Ordenar los tipos de Sub.
+     2. Seleccionar los tipos de pan.
+     3. Seleccionar tipo de queso.
+     4. Escoger entre frio, caliente o tostado.
+     5. Escoger vegetales.
+     6. Escoger liquidos.
+     7. Escoger extras.
+  
    * En la App de celulares la función principal que deberá de tener será ordenar a domicilio de las diferentes sucursales de la ciudad  y que los clientes puedan crear una cuenta para saber su nombre y dirección.
   
   * En la App se encontrara el menú de SubWay incluyendo la información de los sub del día.
