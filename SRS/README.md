@@ -49,10 +49,37 @@
      
 Los puntos anteriores se obtuvieron en una entrevista realizada a un gerente de SubWay, después de escuchar los puntos del gerente se acordó que la App para móviles tendrá la función principal de ordenar a domicilio además de contar con información básica como: menú, sucursales, información de contacto, etc.
  En el sistema que se desarrollara para la empresa se llegó al acuerdo de que cada empleado, administrativo y jefe tendrán su propia cuenta en la que se registrara las horas de trabajo. Este sistema recibira las ordenes detalladas de cada cliente y estará conectado a una base de datos en la que registrara las órdenes vendidas y las horas trabajadas de los empleados, a esta base de datos solo tendrá acceso el jefe de la sucursal y los administrativos.
-
+  ## BPM
+  <p align="center"><img src="https://github.com/RequirementEngineering/ch-re-DiegoAlmanza/blob/master/SRS/Caso%20de%20uso/bpm%20Subway/Business%20Process%20Diagram1.jpg" height=70% width=70%></img></p>
+  
+  
    ## Caso de uso general
-   <p align="center"><img src="https://github.com/RequirementEngineering/ch-re-DiegoAlmanza/blob/master/SRS/Caso%20de%20uso/SubWay%20app%20caso%20de%20uso%20(1).png" height=80% width=80%></img></p>
-     
+   <p align="center"><img src="https://github.com/RequirementEngineering/ch-re-DiegoAlmanza/blob/master/SRS/Caso%20de%20uso/SubWay%20app%20caso%20de%20uso%20(1).png" height=50% width=50%></img></p>
+   
+  Usuario  | Descripcion
+ ----- | -------------
+ Nombre | SubWay App
+ Autor | Diego Almanza Beyless
+ Fecha | 25/04/2019
+ Descripción |La funcion principal del sistema sera ordenar a domicilio de las tiendas SubWay desde una app para moviles, el sistema tambien contara con una base de datos para guardar las horas de trabajo de los empleados, ventas e inventario.
+ Actores | Empleados, Cliente y dueño
+ Condiciones | Tener una cuenta creada.
+ Flujo| Cliente .- Iniciar sesion, Ordenar. Cajero.- Iniciar sesion, Registrar hora de entrada y salida, Recibir Orden, Cobrar Orden. Cocinero .- Iniciar sesion, Registrar hora de entrada y salida, Cocinar orden.  Repartidor.- Iniciar sesion, Registrar hora de entrada y salida, Recoger orden, entregar Orden, Cobrar Orden. Dueño.- acceso a la base de datos.
+
+  ## Caso de uso especifico 1
+  <p align="center"><img src="https://github.com/RequirementEngineering/ch-re-DiegoAlmanza/blob/master/SRS/Caso%20de%20uso/EMIS.png"></img></p>
+  
+  Usuario  | Descripcion
+ ----- | -------------
+ Nombre | SubWay App
+ Autor | Diego Almanza Beyless
+ Fecha | 25/04/2019
+ Descripción |Cuando los empleados inicien sesion se registrara la hora de entrada y al cerrarla la hora de salida en la base de datos, se guardara informacion basica del empleado y un ID para identificar cada empleado.
+ Actores | Cajero, Cocinero y Repartidor.
+ Condiciones | Tener una cuenta creada.
+ Flujo| Ingresar ID y la contraseña para ingresar, una vez en la cuuenta el cajero recibira las ordenes de los clientes.
+ 
+ 
 
   ## Perspectiva del producto
   La finalidad del producto es facilitar el servicio a domiciliio de la empresa, el producto sera una aplicación móvil que funcionara en smartphones en la cual se podara ordenar lo siguiente:
