@@ -1,3 +1,29 @@
+ - [Table of contents and index](#Table-of-contents-and-index)
+ - [Introducción](#Introducción)
+    - [Propósito](#Propósito)
+    - [Alcance](#Alcance)
+    - [Definiciones, acrónimos y abreviaturas.](#Definiciones-,-acrónimos-y-abreviaturas.)
+    - [Referencias](#Referencias)
+ - [Descripción general](#Descripción-general)
+    - [Perspectiva del producto](#Perspectiva-del-producto)
+    - [Caracteristicas del usuario](#Caracteristicas-del-usuario)
+ - [Suposiciones y dependencias](#Suposiciones-y-dependencias)
+ - [Requerimientos](#Requerimientos)
+    - [Requerimientos de sistema](#Requerimientos-de-sistema)
+    - [Requerimientos funcionales](#Requerimientos-funcionales)
+      - [Caso de uso general](#Caso-de-uso-general)
+      - [Caso de uso especifico 1](#Caso-de-uso-especifico-1)
+     
+    - [Requerimientos No funcionales](# Requerimientos-No-funcionales)
+  - [Appendixes](#Appendixes)
+      - [Elicitación](#Elicitación)
+      - [BPM](#BPM)
+    
+    
+      
+    
+
+
 # Introducción 
   ## Propósito
    
@@ -25,61 +51,6 @@
 
 # Descripción general
 
-  ## Elicitación
-  
-   * El proceso de preparacion de los Sub es:
-     1. Ordenar los tipos de Sub.
-     2. Seleccionar los tipos de pan.
-     3. Seleccionar tipo de queso.
-     4. Escoger entre frio, caliente o tostado.
-     5. Escoger vegetales.
-     6. Escoger liquidos.
-     7. Escoger extras.
-  
-   * En la App de celulares la función principal que deberá de tener será ordenar a domicilio de las diferentes sucursales de la ciudad  y que los clientes puedan crear una cuenta para saber su nombre y dirección.
-  
-  * En la App se encontrara el menú de SubWay incluyendo la información de los sub del día.
-  
-  * También se deberá encontrar información en la App de las sucursales que estén en la ciudad y la información de contacto de cada sucursal.
-  
-  * El sistema de la empresa debera de contar con lo siguiente:
-     1. registro de entrada y salida de cada empleado.
-     2. recibir las ordenes que hagan los clientes desde la App movil y dirección para entregar cada orden.
-     3. guardar todas las ordenes echas por los clientes.
-     
-Los puntos anteriores se obtuvieron en una entrevista realizada a un gerente de SubWay, después de escuchar los puntos del gerente se acordó que la App para móviles tendrá la función principal de ordenar a domicilio además de contar con información básica como: menú, sucursales, información de contacto, etc.
- En el sistema que se desarrollara para la empresa se llegó al acuerdo de que cada empleado, administrativo y jefe tendrán su propia cuenta en la que se registrara las horas de trabajo. Este sistema recibira las ordenes detalladas de cada cliente y estará conectado a una base de datos en la que registrara las órdenes vendidas y las horas trabajadas de los empleados, a esta base de datos solo tendrá acceso el jefe de la sucursal y los administrativos.
-  ## BPM
-  <p align="center"><img src="https://github.com/RequirementEngineering/ch-re-DiegoAlmanza/blob/master/SRS/Caso%20de%20uso/bpm%20Subway/Business%20Process%20Diagram1.jpg" height=70% width=70%></img></p>
-  
-  
-   ## Caso de uso general
-   <p align="center"><img src="https://github.com/RequirementEngineering/ch-re-DiegoAlmanza/blob/master/SRS/Caso%20de%20uso/SubWay%20app%20caso%20de%20uso%20(1).png" height=50% width=50%></img></p>
-   
-  Usuario  | Descripcion
- ----- | -------------
- Nombre | SubWay App
- Autor | Diego Almanza Beyless
- Fecha | 25/04/2019
- Descripción |La funcion principal del sistema sera ordenar a domicilio de las tiendas SubWay desde una app para moviles, el sistema tambien contara con una base de datos para guardar las horas de trabajo de los empleados, ventas e inventario.
- Actores | Empleados, Cliente y dueño
- Condiciones | Tener una cuenta creada.
- Flujo| Cliente .- Iniciar sesion, Ordenar. Cajero.- Iniciar sesion, Registrar hora de entrada y salida, Recibir Orden, Cobrar Orden. Cocinero .- Iniciar sesion, Registrar hora de entrada y salida, Cocinar orden.  Repartidor.- Iniciar sesion, Registrar hora de entrada y salida, Recoger orden, entregar Orden, Cobrar Orden. Dueño.- acceso a la base de datos.
-
-  ## Caso de uso especifico 1
-  <p align="center"><img src="https://github.com/RequirementEngineering/ch-re-DiegoAlmanza/blob/master/SRS/Caso%20de%20uso/EMIS.png"></img></p>
-  
-  Usuario  | Descripcion
- ----- | -------------
- Nombre | SubWay App
- Autor | Diego Almanza Beyless
- Fecha | 25/04/2019
- Descripción |Cuando los empleados inicien sesion se registrara la hora de entrada y al cerrarla la hora de salida en la base de datos, se guardara informacion basica del empleado y un ID para identificar cada empleado.
- Actores | Cajero, Cocinero y Repartidor.
- Condiciones | Tener una cuenta creada.
- Flujo| Ingresar ID y la contraseña para ingresar, una vez en la cuuenta el cajero recibira las ordenes de los clientes.
- 
- 
 
   ## Perspectiva del producto
   La finalidad del producto es facilitar el servicio a domiciliio de la empresa, el producto sera una aplicación móvil que funcionara en smartphones en la cual se podara ordenar lo siguiente:
@@ -140,10 +111,10 @@ tambien se podra encontrar la siguiente informacion:
    * En android: sistema operativo android 4.0 o superior. 
    * En Iphone: Ios 10 o superior.
    
-   ### Requerimientos específicos
+   ### Requerimientos
    En esta sección se encontraran a detalle los requerimientos específicos del sistema a desarrollar.
    
-   ### Interfaz
+   ### Requerimientos de sistema
    
    ### Interfaz Cliente
    La interfaz de la App para los clientes deberá ser intuitiva de manera que, sin un manual el usuario pueda ininteractuar de manera sencilla con la aplicación. La interfaz a demas deberá contar con los colores caracteristicos de SubWay los cuales son verde y amarillio. 
@@ -220,6 +191,33 @@ El Administrador se le mostrara una base de datos con las horas de trabajo de ca
     
     5. Cuentas especiales para el uso de los repartidores, en estas cuentas el repartidor encontrara lo necesario para realizar las entregas de los pedidos 
     
+ ## Caso de uso general
+   <p align="center"><img src="https://github.com/RequirementEngineering/ch-re-DiegoAlmanza/blob/master/SRS/Caso%20de%20uso/SubWay%20app%20caso%20de%20uso%20(1).png" height=50% width=50%></img></p>
+   
+  Usuario  | Descripcion
+ ----- | -------------
+ Nombre | SubWay App
+ Autor | Diego Almanza Beyless
+ Fecha | 25/04/2019
+ Descripción |La funcion principal del sistema sera ordenar a domicilio de las tiendas SubWay desde una app para moviles, el sistema tambien contara con una base de datos para guardar las horas de trabajo de los empleados, ventas e inventario.
+ Actores | Empleados, Cliente y dueño
+ Condiciones | Tener una cuenta creada.
+ Flujo| Cliente .- Iniciar sesion, Ordenar. Cajero.- Iniciar sesion, Registrar hora de entrada y salida, Recibir Orden, Cobrar Orden. Cocinero .- Iniciar sesion, Registrar hora de entrada y salida, Cocinar orden.  Repartidor.- Iniciar sesion, Registrar hora de entrada y salida, Recoger orden, entregar Orden, Cobrar Orden. Dueño.- acceso a la base de datos.
+
+  ## Caso de uso especifico 1
+  <p align="center"><img src="https://github.com/RequirementEngineering/ch-re-DiegoAlmanza/blob/master/SRS/Caso%20de%20uso/EMIS.png"></img></p>
+  
+  Usuario  | Descripcion
+ ----- | -------------
+ Nombre | SubWay App
+ Autor | Diego Almanza Beyless
+ Fecha | 25/04/2019
+ Descripción |Cuando los empleados inicien sesion se registrara la hora de entrada y al cerrarla la hora de salida en la base de datos, se guardara informacion basica del empleado y un ID para identificar cada empleado.
+ Actores | Cajero, Cocinero y Repartidor.
+ Condiciones | Tener una cuenta creada.
+ Flujo| Ingresar ID y la contraseña para ingresar, una vez en la cuuenta el cajero recibira las ordenes de los clientes.
+ 
+     
     
  ### Requirimiento No funcionales
   1. El requerimiento más importante que el sistema va a tener es la estabilidad, ya que si el producto final no es estable tiene el riesgo de cambiar o dañar los pedidos de los clientes y esto afectaría a la empresa y al cliente.
@@ -230,8 +228,33 @@ El Administrador se le mostrara una base de datos con las horas de trabajo de ca
    
    4. Mantenimiento cada cierto tiempo al software.
 
+  ## Appendixes
+  ## Elicitación
   
-
+   * El proceso de preparacion de los Sub es:
+     1. Ordenar los tipos de Sub.
+     2. Seleccionar los tipos de pan.
+     3. Seleccionar tipo de queso.
+     4. Escoger entre frio, caliente o tostado.
+     5. Escoger vegetales.
+     6. Escoger liquidos.
+     7. Escoger extras.
+  
+   * En la App de celulares la función principal que deberá de tener será ordenar a domicilio de las diferentes sucursales de la ciudad  y que los clientes puedan crear una cuenta para saber su nombre y dirección.
+  
+  * En la App se encontrara el menú de SubWay incluyendo la información de los sub del día.
+  
+  * También se deberá encontrar información en la App de las sucursales que estén en la ciudad y la información de contacto de cada sucursal.
+  
+  * El sistema de la empresa debera de contar con lo siguiente:
+     1. registro de entrada y salida de cada empleado.
+     2. recibir las ordenes que hagan los clientes desde la App movil y dirección para entregar cada orden.
+     3. guardar todas las ordenes echas por los clientes.
+     
+Los puntos anteriores se obtuvieron en una entrevista realizada a un gerente de SubWay, después de escuchar los puntos del gerente se acordó que la App para móviles tendrá la función principal de ordenar a domicilio además de contar con información básica como: menú, sucursales, información de contacto, etc.
+ En el sistema que se desarrollara para la empresa se llegó al acuerdo de que cada empleado, administrativo y jefe tendrán su propia cuenta en la que se registrara las horas de trabajo. Este sistema recibira las ordenes detalladas de cada cliente y estará conectado a una base de datos en la que registrara las órdenes vendidas y las horas trabajadas de los empleados, a esta base de datos solo tendrá acceso el jefe de la sucursal y los administrativos.
+  ## BPM
+  <p align="center"><img src="https://github.com/RequirementEngineering/ch-re-DiegoAlmanza/blob/master/SRS/Caso%20de%20uso/bpm%20Subway/Business%20Process%20Diagram1.jpg" height=70% width=70%></img></p>
   
    
    
