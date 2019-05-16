@@ -323,15 +323,17 @@ Los puntos anteriores se obtuvieron en una entrevista realizada a un gerente de 
  En el sistema que se desarrollara para la empresa se llegó al acuerdo de que cada empleado, administrativo y jefe tendrán su propia cuenta en la que se registrara las horas de trabajo. Este sistema recibira las ordenes detalladas de cada cliente y estará conectado a una base de datos en la que registrara las órdenes vendidas y las horas trabajadas de los empleados, a esta base de datos solo tendrá acceso el jefe de la sucursal y los administrativos.
   ## BPM
   <p align="center"><img src="https://github.com/RequirementEngineering/ch-re-DiegoAlmanza/blob/master/SRS/Caso%20de%20uso/bpm%20Subway/Business%20Process%20Diagram1.jpg" height=70% width=70%></img></p>
+  
   ## Proceso 1
- * El evento principal inicia con el cliente iniciando sesión.
+  
+  * El evento principal inicia con el cliente iniciando sesión.
   * El sistema detecta si tiene cuenta o no, si el usuario no tiene cuenta se crea un sub proceso para crear una cuenta.
   * Cuando el usuario ingrese podrá ordenar, cuando se confirme la orden el cajero la recibirá y le notificara al cocinero la orden.
   * El cocinero prepara la orden en un tiempo estimado de 15 minutos y le entregara la orden al cajero 
   * El cajero cobrara la orden y genera el ticket, después le entregara la orden al repartidor.
   
   * El repartidor llevara la orden en un tiempo estimado de 30 minutos al domicilio del cliente.
-   * Si el cliente paga con tarjeta de crédito se abre el sub proceso para paga con tarjeta de crédito.
+  * Si el cliente paga con tarjeta de crédito se abre el sub proceso para paga con tarjeta de crédito.
   * El cliente pagara la orden, si la paga es en efectivo le entrega el dinero al repartidor y el repartidor le entregara la orden al cliente.
   * Fin de proceso.
 
@@ -343,13 +345,34 @@ Los puntos anteriores se obtuvieron en una entrevista realizada a un gerente de 
   * El empleado registrara sus horas de entrada y de salida.
   * El sistema guardara las horas trabajadas de cada empleado en la base de datos.
   * El administrativo tendrá acceso a la base de datos para conocer las horas trabajadas de cada empleado.
-  * Fin de proceso
+  * Fin de evento
 
-
+ ## Subproceso 1
+ <p align="center"><img src="https://github.com/RequirementEngineering/ch-re-DiegoAlmanza/blob/master/SRS/Caso%20de%20uso/bpm%20Subway/Crear%20cuenta%20cliente.jpg"></img></p>
  
+ * El evento comienza si el usuario no tiene una cuneta creada.
+ * El usuario ingresara su nombre, apellido, direccion y telefono.
+ * El usuario creara su nombre de usuario y contraseña.
+ * Fin de evento
+ 
+ ## Subproceso 2
+  <p align="center"><img src="https://github.com/RequirementEngineering/ch-re-DiegoAlmanza/blob/master/SRS/Caso%20de%20uso/bpm%20Subway/Crear%20Cuenta%20empleado.jpg"></img></p>
    
+   * El evento comienza si el empleado no tenia una cuneta.
+   * El administrador creara la nueva cuanta.
+   * Se registraran los datos del nuevo empleado.
+   * Se genera una ID nueva para el empleado.
+   * Fin de proceso
    
+ ## Subproceso 3
+  <p align="center"><img src="https://github.com/RequirementEngineering/ch-re-DiegoAlmanza/blob/master/SRS/Caso%20de%20uso/bpm%20Subway/Pagar%20con%20tarjeta.jpg"></img></p>
    
-   
+   * El evento comienza si el cliente paga con tarjeta
+   * Primero se ingresan los datos de la tarjeta.
+   * Si los datos no son correctos se muestra un mensaje de error.
+   * Si los datos son correctos se verifica que tenga fondos suficientes
+   * Si no tiene fondos se muestra mensaje de error
+   * Si tiene los fondos suficientes prcede con la compra
+   * Fin de proceso
    
   
