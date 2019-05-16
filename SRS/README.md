@@ -13,8 +13,13 @@
     - [Requerimientos funcionales](#Requerimientos-funcionales)
       - [Caso de uso general](#Caso-de-uso-general)
       - [Caso de uso especifico 1](#Caso-de-uso-especifico-1)
+      - [Caso de uso especifico 2](#Caso-de-uso-especifico-2)
+      - [Caso de uso especifico 3](#Caso-de-uso-especifico-3)
+      - [Caso de uso especifico 4](#Caso-de-uso-especifico-4)
+      - [Caso de uso especifico 5](#Caso-de-uso-especifico-5)
+      - [Caso de uso especifico 6](#Caso-de-uso-especifico-6)
      
-    - [Requerimientos No funcionales](# Requerimientos-No-funcionales)
+    - [Requerimientos No funcionales](#Requerimientos-No-funcionales)
   - [Appendixes](#Appendixes)
       - [Elicitación](#Elicitación)
       - [BPM](#BPM)
@@ -207,7 +212,7 @@ El Administrador se le mostrara una base de datos con las horas de trabajo de ca
   ## Caso de uso especifico 1
   <p align="center"><img src="https://github.com/RequirementEngineering/ch-re-DiegoAlmanza/blob/master/SRS/Caso%20de%20uso/EMIS.png"></img></p>
   
-  Usuario  | Descripcion
+ Usuario  | Descripcion
  ----- | -------------
  Nombre | SubWay App
  Autor | Diego Almanza Beyless
@@ -217,8 +222,71 @@ El Administrador se le mostrara una base de datos con las horas de trabajo de ca
  Condiciones | Tener una cuenta creada.
  Flujo| Ingresar ID y la contraseña para ingresar, una vez en la cuuenta el cajero recibira las ordenes de los clientes.
  
-     
-    
+  ## Caso de uso especifico 2
+  <p align="center"><img src="https://github.com/RequirementEngineering/ch-re-DiegoAlmanza/blob/master/SRS/Caso%20de%20uso/CAOR.png"></img></p>
+  
+ Usuario  | Descripcion
+ ----- | -------------
+ Nombre | SubWay App
+ Autor | Diego Almanza Beyless
+ Fecha | 25/04/2019
+ Descripción |El cajero recibe la orden en el sistema, después notificara al cocinero para que este proceda a preparar la orden, una vez terminada la orden el cajero la cobrara y se la entregara al repartidor.
+ Actores | Cajero, Cocinero y Repartidor.
+ Condiciones | Tener los ingredientes para la orden.
+ Flujo| Recibir orede, prepar la orden y entregarla a domicilio.
+ 
+  ## Caso de uso especifico 3
+  <p align="center"><img src="https://github.com/RequirementEngineering/ch-re-DiegoAlmanza/blob/master/SRS/Caso%20de%20uso/CLIS.png"></img></p>
+  
+ Usuario  | Descripcion
+ ----- | -------------
+ Nombre | SubWay App
+ Autor | Diego Almanza Beyless
+ Fecha | 25/04/2019
+ Descripción |El cliente iniciara sesión para poder ordenar.
+ Actores | Cliente.
+ Condiciones | Tener cuenta creada.
+ Flujo| ingresar nombre de usuario y contraseña.
+ 
+ ## Caso de uso especifico 4
+ <p align="center"><img src="https://github.com/RequirementEngineering/ch-re-DiegoAlmanza/blob/master/SRS/Caso%20de%20uso/CLOR.png"></img></p>
+ 
+ Usuario  | Descripcion
+ ----- | -------------
+ Nombre | SubWay App
+ Autor | Diego Almanza Beyless
+ Fecha | 25/04/2019
+ Descripción |El cliente creara su orden y despues de confirmar la orden sera enviada al sistema de los empleados.
+ Actores | Cliente.
+ Condiciones | Tener cuenta creada.
+ Flujo| El usuario ingresara a su cuenta y creara su orden a gusto personal escogiendo los tipos de sub y los ingredientes que estos llevara.
+   
+ ## Caso de uso especifico 5
+ <p align="center"><img src="https://github.com/RequirementEngineering/ch-re-DiegoAlmanza/blob/master/SRS/Caso%20de%20uso/COOR.png"></img></p>
+ 
+ Usuario  | Descripcion
+ ----- | -------------
+ Nombre | SubWay App
+ Autor | Diego Almanza Beyless
+ Fecha | 25/04/2019
+ Descripción |El cocinero preparara la orden del cliente
+ Actores | Cajero, Cocinero y Cliente.
+ Condiciones | Tener los ingredientes necesarios para preparar la orden.
+ Flujo|El cajero recibe la orden del cliente y se le notifica al cocinero, el cocinero revisa la orden y la prepara.
+ 
+ ## Caso de uso especifico 6
+ <p align="center"><img src="https://github.com/RequirementEngineering/ch-re-DiegoAlmanza/blob/master/SRS/Caso%20de%20uso/DUBA.png"></img></p>
+ 
+ Usuario  | Descripcion
+ ----- | -------------
+ Nombre | SubWay App
+ Autor | Diego Almanza Beyless
+ Fecha | 25/04/2019
+ Descripción |El Dueño tendra acceso a la base de datos.
+ Actores | Dueño.
+ Condiciones | Tener cuenta para acceder a la base de datos.
+ Flujo|El dueño ingresa a su cuenta y encontrara la base de datos con la informacion de ventas y horas trabajadas de los empleados.
+ 
  ### Requerimientos No funcionales
   1. El requerimiento más importante que el sistema va a tener es la estabilidad, ya que si el producto final no es estable tiene el riesgo de cambiar o dañar los pedidos de los clientes y esto afectaría a la empresa y al cliente.
    
@@ -255,8 +323,30 @@ Los puntos anteriores se obtuvieron en una entrevista realizada a un gerente de 
  En el sistema que se desarrollara para la empresa se llegó al acuerdo de que cada empleado, administrativo y jefe tendrán su propia cuenta en la que se registrara las horas de trabajo. Este sistema recibira las ordenes detalladas de cada cliente y estará conectado a una base de datos en la que registrara las órdenes vendidas y las horas trabajadas de los empleados, a esta base de datos solo tendrá acceso el jefe de la sucursal y los administrativos.
   ## BPM
   <p align="center"><img src="https://github.com/RequirementEngineering/ch-re-DiegoAlmanza/blob/master/SRS/Caso%20de%20uso/bpm%20Subway/Business%20Process%20Diagram1.jpg" height=70% width=70%></img></p>
+  ## Proceso 1
+ * El evento principal inicia con el cliente iniciando sesión.
+  * El sistema detecta si tiene cuenta o no, si el usuario no tiene cuenta se crea un sub proceso para crear una cuenta.
+  * Cuando el usuario ingrese podrá ordenar, cuando se confirme la orden el cajero la recibirá y le notificara al cocinero la orden.
+  * El cocinero prepara la orden en un tiempo estimado de 15 minutos y le entregara la orden al cajero 
+  * El cajero cobrara la orden y genera el ticket, después le entregara la orden al repartidor.
   
-   
+  * El repartidor llevara la orden en un tiempo estimado de 30 minutos al domicilio del cliente.
+   * Si el cliente paga con tarjeta de crédito se abre el sub proceso para paga con tarjeta de crédito.
+  * El cliente pagara la orden, si la paga es en efectivo le entrega el dinero al repartidor y el repartidor le entregara la orden al cliente.
+  * Fin de proceso.
+
+  
+  ## Proceso 2
+ * El evento de registro de horas de trabajo comienza con los empleados iniciando sesión.
+  * El sistema detecta si tiene cuenta o no, si el usuario no tiene cuenta se crea un sub proceso para crear una cuenta.
+  * El administrativo creara la cuenta del nuevo empleado.
+  * El empleado registrara sus horas de entrada y de salida.
+  * El sistema guardara las horas trabajadas de cada empleado en la base de datos.
+  * El administrativo tendrá acceso a la base de datos para conocer las horas trabajadas de cada empleado.
+  * Fin de proceso
+
+
+ 
    
    
    
